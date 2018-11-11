@@ -5,12 +5,17 @@ import { Header } from '../sections/Header.js';
 export class Home extends React.Component {
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <Header message = 'Press to Login' />
-        <Text> This will be the home page</Text>
-        <Text> This will be another section</Text>
-        <Text> This will be a section too</Text>
+        <Text style={{flex: 8}}> This will be the home page</Text>
+        <Text style={{flex: 6}}> This will be another section</Text>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  }
+});
