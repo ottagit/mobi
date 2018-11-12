@@ -2,6 +2,9 @@ import React from 'react';
 import { Home } from './app/views/Home.js';
 import { Contact } from './app/views/Contact.js';
 import { StackNavigator } from 'react-navigation';
+
+import { Video } from './app/views/Video.js';
+
 // StackNavigator is a function that returns a component
 const MyRoutes = StackNavigator({
   HomeRT: {
@@ -9,6 +12,9 @@ const MyRoutes = StackNavigator({
   },
   ContactRT: {
     screen: Contact
+  },
+  LessonsRT: {
+    screen: Video
   },
 },
 // specify what component to launch first
