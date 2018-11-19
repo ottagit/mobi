@@ -5,6 +5,7 @@ import { StackNavigator } from 'react-navigation';
 
 import { Video } from './app/views/Video.js';
 import { VideoDetail } from './app/views/VideoDetail.js';
+import { Register } from './app/views/Register.js';
 
 // StackNavigator is a function that returns a component
 const MyRoutes = StackNavigator({
@@ -19,6 +20,9 @@ const MyRoutes = StackNavigator({
   },
   VideoDetailRT: {
     screen: VideoDetail
+  },
+  RegisterRT: {
+    screen: Register
   },
 },
 // specify what component to launch first
