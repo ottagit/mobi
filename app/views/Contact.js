@@ -26,9 +26,11 @@ export class Contact extends React.Component {
   };
 
   render() {
+    const { navigate } = this.props.navigation;
+
     return (
       <View style={styles.container}>
-        <Header message='Login' />
+        <Header navigate = {navigate} message='Login' />
         <Text style={styles.heading}>Contact Us</Text>
 
         <TextInput
@@ -72,11 +74,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    paddingBottom: '45%'
+    paddingBottom: '30%'
   },
   heading: {
     fontSize: 16,
-    flex: 1
+    flex: 1,
+    paddingTop: 10
   },
   inputs: {
     flex: 1,
