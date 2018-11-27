@@ -26,8 +26,8 @@ export class Blog extends Component {
     });
   }
   
-  chooseBlog = (blogId) => {
-    console.log(`Blog chosen ${blogId}`);
+  chooseBlog = (blogID) => {
+    this.props.navigation.navigate('BlogDetailRT', { blogId: blogID });
   }
 
   render() {
