@@ -11,6 +11,8 @@ import { Login } from './app/views/Login.js';
 import { Quiz } from './app/views/Quiz.js';
 import { Finish } from './app/views/QuizFinish.js';
 
+import { Blog } from './app/views/Blog.js';
+
 // StackNavigator is a function that returns a component
 const MyRoutes = StackNavigator({
   HomeRT: {
@@ -36,6 +38,9 @@ const MyRoutes = StackNavigator({
   },
   FinishRT: {
     screen: Finish
+  },
+  BlogRT: {
+    screen: Blog
   }
 },
 // specify what component to launch first
